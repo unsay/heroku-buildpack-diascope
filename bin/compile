@@ -1,0 +1,20 @@
+#!/bin/sh
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+echo "-----> Install diascope"
+BUILD_DIR=$1
+VENDOR_DIR="vendor"
+DOWNLOAD_URL="https://www.dropbox.com/s/fnr61ihitihgi3g/diascope-0.2.1e.tgz?dl=1"
+
+echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
+
+cd $BUILD_DIR
+mkdir -p $VENDOR_DIR
+cd $VENDOR_DIR
+curl -L --silent $DOWNLOAD_URL | tar xz
+cd diascope-0.2.1e
+/bin/bash install.sh
+
