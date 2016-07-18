@@ -7,7 +7,7 @@ indent() {
 echo "-----> Install diascope"
 BUILD_DIR=$1
 VENDOR_DIR="vendor"
-DOWNLOAD_URL="https://www.dropbox.com/s/fnr61ihitihgi3g/diascope-0.2.1e.tgz?dl=1"
+DOWNLOAD_URL="https://www.dropbox.com/s/2zk427veszgi6v3/diascope-0.2.1e.tgz?dl=1"
 
 echo "DOWNLOAD_URL = " $DOWNLOAD_URL | indent
 
